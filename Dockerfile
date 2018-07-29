@@ -1,6 +1,8 @@
 FROM alpine:latest
 
-RUN 
+RUN apk add --update tini
+&& mkdir -p /usr/src/app
+&& 
 
 # use this empty Dockerfile to build your assignment
 
