@@ -49,7 +49,7 @@ COPY . .
 
 # - then it needs to start container with command '/sbin/tini -- node ./bin/www'
 
-CMD ["/sbin", "--", "node", "./bin/www"]
+CMD ["/sbin/tini", "--", "node", "./bin/www"]
 
 # - in the end you should be using FROM, RUN, WORKDIR, COPY, EXPOSE, and CMD commands
 
